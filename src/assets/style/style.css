@@ -1,6 +1,7 @@
-.err-msg{
+.err-msg {
     color: red;
 }
+
 .link-card {
     display: flex;
 }
@@ -15,12 +16,45 @@
 .signin-card {
     background-color: rgb(0, 121, 121);
     flex: 1;
+}
+
+.signin-card-logo {
+    display: flex;
+}
+
+.signin-card-welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+
+.signin-card-welcome h2 {
+    margin: 10px 5px;
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 1px;
+
+}
+
+.signin-card-welcome p {
+    margin: 10px 5px;
+    text-align: center;
+    font-weight: 100;
+    color: white;
+
+}
+
+/* .signin-card {
+    background-color: rgb(0, 121, 121);
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.signin-card div {
+.signin-card signin-card-welcome {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,7 +62,7 @@
 
 }
 
-.signin-card div h2 {
+.signin-card signin-card-welcome h2 {
     margin: 10px 5px;
     text-align: center;
     font-weight: 700;
@@ -36,12 +70,12 @@
     letter-spacing: 1px;
 }
 
-.signin-card div p {
+.signin-card signin-card-welcome p {
     margin: 10px 5px;
     text-align: center;
     font-weight: 100;
     color: white;
-}
+} */
 
 .button-signin {
     margin: 15px 5px;
@@ -68,7 +102,8 @@
 .signup-card h2 {
     color: rgb(0, 121, 121);
 }
-.signup-card p{
+
+.signup-card p {
     color: rgb(170, 170, 170);
     font-size: small;
 }
@@ -113,14 +148,16 @@
     text-align: center;
 
 }
-::placeholder {
-    padding-left: 15px; 
- }
 
-.input-card-div{
+::placeholder {
+    padding-left: 15px;
+}
+
+.input-card-div {
     position: relative;
 }
-.input-card{
+
+.input-card {
     position: absolute;
     top: 5px;
     left: 6px;

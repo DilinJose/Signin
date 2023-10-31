@@ -6,8 +6,7 @@ import { AiOutlineGooglePlus } from "react-icons/ai";
 import { BsPerson } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
 import { RiLockPasswordLine } from "react-icons/ri";
-
-
+import logo from "../assets/img/logo.png";
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
 const phoneRegex = /^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])/;
@@ -38,14 +37,21 @@ const SignUp = () => {
   return (
     <div className="container-fluid card">
       <div className="main-card">
+        {/* <div> */}
         <div className="signin-card">
-          <div>
-            <h2>Welcome Back!</h2>
-            <p>
-              to keep connected with us please <br /> login with your personal
-              info
-            </p>
-            <button className="button-signin">SIGN IN</button>
+          <div className="signin-card-logo">
+            <img src={logo} alt="Logo" width={50} />
+            <h6>Diprella</h6>
+          </div>
+          <div className="d-flex justify-content-center align-item-center h-100 ">
+            <div className="signin-card-welcome">
+              <h2>Welcome Back!</h2>
+              <p>
+                to keep connected with us please <br /> login with your personal
+                info
+              </p>
+              <button className="button-signin">SIGN IN</button>
+            </div>
           </div>
         </div>
         <div className="signup-card ">
@@ -158,6 +164,7 @@ const SignUp = () => {
             </Formik>
           </div>
         </div>
+        {/* </div> */}
       </div>
     </div>
   );
