@@ -7,6 +7,7 @@ import { BsPerson } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
 import { RiLockPasswordLine } from "react-icons/ri";
 import logo from "../assets/img/logo.png";
+import { Link } from "react-router-dom";
 
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
 const phoneRegex = /^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])/;
@@ -50,7 +51,10 @@ const SignUp = () => {
                 to keep connected with us please <br /> login with your personal
                 info
               </p>
-              <button className="button-signin">SIGN IN</button>
+              <button className="button-signin">
+                <Link style={{textDecoration:"none",color:"white"}} to={"/signin"}>SIGN IN</Link>
+                {/* SIGN IN */}
+              </button>
             </div>
           </div>
         </div>
