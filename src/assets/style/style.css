@@ -1,11 +1,127 @@
-.button {
-    background-color: aqua;
-    border-radius: 4rem;
+.err-msg{
+    color: red;
+}
+.link-card {
+    display: flex;
 }
 
-.link-icons{
-    color: black;
-}
-.flex-card{
+.main-card {
+    height: 100vh;
     display: flex;
+    flex-direction: row;
+    /* margin: auto; */
+}
+
+.signin-card {
+    background-color: rgb(0, 121, 121);
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signin-card div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.signin-card div h2 {
+    margin: 10px 5px;
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.signin-card div p {
+    margin: 10px 5px;
+    text-align: center;
+    font-weight: 100;
+    color: white;
+}
+
+.button-signin {
+    margin: 15px 5px;
+
+    background-color: rgb(0, 121, 121);
+    border: 1px solid white;
+    border-radius: 4rem;
+    width: 70%;
+    padding: 10px 10px;
+    color: white;
+    font-weight: 400;
+    font-size: small;
+}
+
+.signup-card {
+    flex: 2;
+    /* border: 1px solid rgb(224, 12, 12); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.signup-card h2 {
+    color: rgb(0, 121, 121);
+}
+.signup-card p{
+    color: rgb(170, 170, 170);
+    font-size: small;
+}
+
+.button-signup {
+    margin: 15px 5px;
+
+    background-color: rgb(0, 121, 121);
+    border: 1px solid white;
+    border-radius: 4rem;
+    width: 70%;
+    padding: 10px 10px;
+    color: white;
+    font-weight: 400;
+    font-size: small;
+}
+
+.form-card {
+    width: 40%;
+
+
+}
+
+.form-control {
+    background-color: rgb(233, 233, 233);
+    /* background-image: url("../img/person-icon.png");
+    background-repeat: no-repeat;
+    padding-left:5px; */
+}
+
+.link-icons {
+    color: black;
+
+}
+
+.link-icon {
+    border: 1px rgb(173, 173, 173) solid;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+
+}
+::placeholder {
+    padding-left: 15px; 
+ }
+
+.input-card-div{
+    position: relative;
+}
+.input-card{
+    position: absolute;
+    top: 5px;
+    left: 6px;
 }
