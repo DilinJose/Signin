@@ -1,7 +1,9 @@
+import SignUp from "./SignUp";
 
 function App() {
   return (
-    <div className="App">Hello
+    <div className="App">
+      <SignUp />
     </div>
   );
 }

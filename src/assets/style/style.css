@@ -1,0 +1,11 @@
+.button {
+    background-color: aqua;
+    border-radius: 4rem;
+}
+
+.link-icons{
+    color: black;
+}
+.flex-card{
+    display: flex;
+}
