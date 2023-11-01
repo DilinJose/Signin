@@ -40,9 +40,9 @@ const SignUp = () => {
       <div className="main-card">
         {/* <div> */}
         <div className="signin-card">
-          <div className="signin-card-logo">
+          <div className="signin-card-logo p-3">
             <img src={logo} alt="Logo" width={50} />
-            <h6>Diprella</h6>
+            <h6 className="ps-2 pt-1" style={{color:"white"}}>Diprella</h6>
           </div>
           <div className="d-flex justify-content-center align-item-center h-100 ">
             <div className="signin-card-welcome">
@@ -52,7 +52,12 @@ const SignUp = () => {
                 info
               </p>
               <button className="button-signin">
-                <Link style={{textDecoration:"none",color:"white"}} to={"/signin"}>SIGN IN</Link>
+                <Link
+                  style={{ textDecoration: "none", color: "white" }}
+                  to={"/signin"}
+                >
+                  SIGN IN
+                </Link>
                 {/* SIGN IN */}
               </button>
             </div>
@@ -91,7 +96,7 @@ const SignUp = () => {
               validationSchema={validationSchema}
               onSubmit={(values, { setSubmitting, resetForm }) => {
                 setTimeout(() => {
-                  console.log(values);
+                  console.log("values",values);
                   setSubmitting(false);
                   resetForm();
                 }, 400);
@@ -101,9 +106,14 @@ const SignUp = () => {
                 return (
                   <Form>
                     <div className="m-3 input-card-div">
-                      <div className="input-card">
+                      {!formik.values.name && (
+                        <div className="input-card">
+                          <BsPerson />
+                        </div>
+                      )}
+                      {/* <div className="input-card">
                         <BsPerson />
-                      </div>
+                      </div> */}
                       <Field
                         className="form-control input-icon"
                         name="name"
@@ -119,9 +129,11 @@ const SignUp = () => {
                     </div>
 
                     <div className="m-3 input-card-div">
-                      <div className="input-card">
-                        <HiOutlineMail />
-                      </div>
+                      {!formik.values.email && (
+                        <div className="input-card">
+                          <HiOutlineMail />
+                        </div>
+                      )}
                       <Field
                         className="form-control"
                         name="email"
@@ -137,9 +149,11 @@ const SignUp = () => {
                     </div>
 
                     <div className="m-3 input-card-div">
-                      <div className="input-card">
-                        <RiLockPasswordLine />
-                      </div>
+                      {!formik.values.pswd && (
+                        <div className="input-card">
+                          <RiLockPasswordLine />
+                        </div>
+                      )}
                       <Field
                         className="form-control"
                         name="pswd"
